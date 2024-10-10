@@ -16,7 +16,7 @@ const AdminContact = () => {
   const onFinish = async (values) => {
     try {
       dispatch(showLoading());
-      const response = await axios.post("/api/portfolio/update-contact", {
+      const response = await axios.post("https://chubham-kd5h-dsypljjpc-brighttnuts-projects.vercel.app/update-contact", {
         ...values,
         _id: portfolioData.Contact._id,
       });
