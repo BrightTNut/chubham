@@ -13,7 +13,7 @@ function App() {
   const getPortfolioData = async  () => {
     try {
       dispatch(showLoading());
-      const response = await axios.get("/api/portfolio/get-portfolio-data");
+      const response = await axios.get("https://chubham-kd5h-dsypljjpc-brighttnuts-projects.vercel.app/get-portfolio-data");
       dispatch(setPortfolioData(response.data)); 
       dispatch(reloadData(false));
       dispatch(hideLoading());
