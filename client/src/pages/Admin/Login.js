@@ -13,7 +13,7 @@ function Login() {
   const login = async() => {
     try {
         dispatch(showLoading);
-        const response = await axios.post('https://chubham-kd5h.vercel.app/admin-login', user);
+        const response = await axios.post('https://shubham-server.vercel.app/admin-login', user);
         dispatch(hideLoading());
         if(response.data.success){
             message.success(response.data.message);
