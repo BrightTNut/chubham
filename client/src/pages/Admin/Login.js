@@ -9,6 +9,7 @@ function Login() {
     username: "",
     password: "",
   });
+  axios.defaults.withCredentials= true;
   const dispatch = useDispatch();
   const login = async() => {
     try {
