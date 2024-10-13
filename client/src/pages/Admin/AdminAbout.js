@@ -19,7 +19,7 @@ const Adminabout = () => {
       values.skills = tempSkills;
 
       dispatch(showLoading());
-      const response = await axios.post("https://chubham-kd5h.vercel.app/update-about", {
+      const response = await axios.post("https://shubham-server.vercel.app/update-about", {
         ...values,
         _id: portfolioData.about._id,
       });
