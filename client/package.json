@@ -50,5 +50,5 @@
     "ajv": "^7.2.4",
     "tailwindcss": "^3.4.10"
   },
-  "proxy": "https://chubham-kd5h-dsypljjpc-brighttnuts-projects.vercel.app/"
+ 
 }
