@@ -11,7 +11,7 @@ const AdminProjects = () => {
   const [showAddEditModal, setShowAddEditModal] = React.useState(false);
   const [selectedItemForEdit, setSelectedItemForEdit] = React.useState(null);
   const [type, setType] = React.useState("add");
-
+axios.defaults.withCredentials= true;
   const onFinish = async (values) => {
     try {
       const tempTechnologies = values.technologies
