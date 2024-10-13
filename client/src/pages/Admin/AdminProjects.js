@@ -24,12 +24,12 @@ const AdminProjects = () => {
 
       // Send the experience directly instead of wrapping it in an array
       if (selectedItemForEdit) {
-        response = await axios.post("https://chubham-kd5h.vercel.app/update-project", {
+        response = await axios.post("https://shubham-server.vercel.app/update-project", {
           ...values,
           _id: selectedItemForEdit._id,
         });
       } else {
-        response = await axios.post("https://chubham-kd5h.vercel.app/add-project", values);
+        response = await axios.post("https://shubham-server.vercel.app/add-project", values);
       }
 
       dispatch(hideLoading());
@@ -50,7 +50,7 @@ const AdminProjects = () => {
   const onDelete = async (item) => {
     try {
       dispatch(showLoading());
-      const response = await axios.post("https://chubham-kd5h.vercel.app/delete-project", {
+      const response = await axios.post("https://shubham-server.vercel.app/delete-project", {
         _id: item._id,
       });
       dispatch(hideLoading());
