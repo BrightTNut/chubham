@@ -5,6 +5,7 @@ import { hideLoading, showLoading } from "../../redux/rootSlice";
 import axios from "axios";
 
 const Adminabout = () => {
+  axios.defaults.withCredentials= true;
   // Get the portfolioData from the Redux store
   const { portfolioData } = useSelector((state) => state.root);
 
