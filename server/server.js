@@ -8,7 +8,7 @@ const portfoilioRoute = require("./routes/portfolioRotes");
 
 app.use(express.json());
 
-app.use("https://chubham.vercel.app/", portfoilioRoute);
+app.use("https://chubham.vercel.app", portfoilioRoute);
 
 
 const port = process.env.PORT || 5000
