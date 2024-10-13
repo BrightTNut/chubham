@@ -10,6 +10,7 @@ import Login from "./pages/Admin/Login.js";
 function App() {
   const  {loading ,  portfolioData ,reloadData} = useSelector((state) => state.root);
   const dispatch = useDispatch();
+  axios.defaults.withCredentials= true;
   const getPortfolioData = async  () => {
     try {
       dispatch(showLoading());
