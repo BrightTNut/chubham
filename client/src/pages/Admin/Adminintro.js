@@ -8,7 +8,7 @@ const Adminintro = () => {
   const { portfolioData } = useSelector((state) => state.root);
   const introData = portfolioData?.intro || {};
   const dispatch = useDispatch();
-
+axios.defaults.withCredentials= true;
   const onFinish = async (values) => {
     try {
       dispatch(showLoading());
