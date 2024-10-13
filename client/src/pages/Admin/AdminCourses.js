@@ -12,7 +12,7 @@ const AdminCourses = () => {
   const [selectedItemForEdit, setSelectedItemForEdit] = React.useState(null);
   const [type, setType] = React.useState("add");
   const [form] = Form.useForm();
-
+axios.defaults.withCredentials= true;
   const onFinish = async (values) => {
     try {
       dispatch(showLoading());
