@@ -21,7 +21,7 @@ const AdminCourses = () => {
       console.log("Values to be sent:", values);
 
       if (selectedItemForEdit) {
-        response = await axios.post("https://chubham-kd5h-dsypljjpc-brighttnuts-projects.vercel.app/update-course", {
+        response = await axios.post("https://chubham-kd5h.vercel.app/update-course", {
           ...values,
           _id: selectedItemForEdit._id,
         });
