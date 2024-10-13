@@ -21,7 +21,7 @@ const Experiences = () => {
 
       // Send the experience directly instead of wrapping it in an array
       if (selectedItemForEdit) {
-        response = await axios.post("https://chubham-kd5h.vercel.app/update-experience", {
+        response = await axios.post("https://shubham-server.vercel.app/update-experience", {
           ...values,
           _id: selectedItemForEdit._id,
         });
