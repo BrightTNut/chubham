@@ -12,7 +12,7 @@ const Adminintro = () => {
   const onFinish = async (values) => {
     try {
       dispatch(showLoading());
-      const response = await axios.post("https://chubham-kd5h-dsypljjpc-brighttnuts-projects.vercel.app/update-intro", {
+      const response = await axios.post("https://chubham-kd5h.vercel.app/update-intro", {
         ...values,
         _id: portfolioData.intro._id,
       });
