@@ -14,7 +14,7 @@ function App() {
   const getPortfolioData = async  () => {
     try {
       dispatch(showLoading());
-      const response = await axios.get("https://shubham-server.vercel.app/get-portfolio-data");
+      const response = await axios.get("https://shubham-server.vercel.app/api/portfolio/get-portfolio-data");
       dispatch(setPortfolioData(response.data)); 
       dispatch(reloadData(false));
       dispatch(hideLoading());
